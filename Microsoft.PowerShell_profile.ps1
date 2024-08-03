@@ -1,11 +1,11 @@
 # Starship
-$ENV:STARSHIP_CONFIG = "C:\Users\Admin\Documents\PowerShell\Starship config\starship.toml"
-Invoke-Expression (&starship init powershell)
+#$ENV:STARSHIP_CONFIG = "C:\Users\Admin\Documents\PowerShell\Starshipconfig\starship.toml"
+#Invoke-Expression (&starship init powershell)
 
 # Oh-My-Posh
 
-#oh-my-posh init pwsh | Invoke-Expression
-#oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\themes\paradox.omp.json' | Invoke-Expression
+oh-my-posh init pwsh | Invoke-Expression
+oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
 
 ####### Alias ##########
 
