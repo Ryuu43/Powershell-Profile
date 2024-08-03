@@ -7,6 +7,8 @@ oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\
 
 # Git Shortcuts
 
+function gi { git init }
+
 Set-Alias g git
 
 function gs { git status }
