@@ -10,6 +10,7 @@ oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\
 ####### Alias ##########
 
 # Git Shortcuts
+Set-Alias np notepad
 
 function gi { git init }
 
