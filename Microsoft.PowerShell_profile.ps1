@@ -1,3 +1,5 @@
+$env:PYTHONIOENCODING='utf-8'
+
 # Starship
 #$ENV:STARSHIP_CONFIG = "C:\Users\Admin\Documents\PowerShell\Starshipconfig\starship.toml"
 #Invoke-Expression (&starship init powershell)
@@ -6,6 +8,10 @@
 
 oh-my-posh init pwsh | Invoke-Expression
 oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
+
+
+# Thefuck
+iex "$(thefuck --alias)"
 
 ####### Alias ##########
 
@@ -64,4 +70,5 @@ Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory
 
 
 # Check for Profile Updates
+
 function rpf { . $PROFILE }
