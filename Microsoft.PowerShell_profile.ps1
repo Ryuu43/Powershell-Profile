@@ -22,6 +22,8 @@ function gi { git init }
 
 Set-Alias g git
 
+Set-Alias ex explorer
+
 function gs { git status }
 
 function ga { git add . }
