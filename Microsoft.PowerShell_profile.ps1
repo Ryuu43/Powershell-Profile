@@ -1,17 +1,9 @@
 $env:PYTHONIOENCODING='utf-8'
 
-# Starship
-#$ENV:STARSHIP_CONFIG = "C:\Users\Admin\Documents\PowerShell\Starshipconfig\starship.toml"
-#Invoke-Expression (&starship init powershell)
-
 # Oh-My-Posh
 
 oh-my-posh init pwsh | Invoke-Expression
-oh-my-posh init pwsh --config 'C:\Users\Admin\AppData\Local\Programs\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
-
-
-# Thefuck
-iex "$(thefuck --alias)"
+oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
 
 ####### Alias ##########
 
