@@ -1,14 +1,27 @@
 $env:PYTHONIOENCODING='utf-8'
 
+# STARSHIP_CONFIG
+
+Invoke-Expression (&starship init powershell)
+$ENV:STARSHIP_CONFIG = "C:\Users\Admin\.config\Starship\starship.toml"
+
 # Oh-My-Posh
 
-oh-my-posh init pwsh | Invoke-Expression
-oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
+#oh-my-posh init pwsh | Invoke-Expression
+#oh-my-posh init pwsh --config 'C:\Program Files (x86)\oh-my-posh\themes\1_shell.omp.json' | Invoke-Expression
 
 ####### Alias ##########
 
+Set-Alias cl clear
+
+# MPV Alias
+
+Set-Alias m mpv
+
+Set-Alias um umpvw
+
 # Git Shortcuts
-Set-Alias np notepad
+Set-Alias np notepad++
 
 function gi { git init }
 
@@ -28,11 +41,11 @@ function gcl { git clone "$args" }
 
 function gcom {
     git add .
-    git commit -m "this is auto add-commit-push from ryuu43. Why? welp cuz i lazy :P"
+    git commit -m "this is auto add-commit-push"
 }
 function lazyg {
     git add .
-    git commit -m "this is auto add-commit-push from ryuu43. Why? welp cuz i lazy :P"
+    git commit -m "this is auto add-commit-push"
     git push
 }
 Set-Alias ll ls
