@@ -1,4 +1,6 @@
+# set PowerShell to UTF-8
 $env:PYTHONIOENCODING='utf-8'
+[console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # STARSHIP_CONFIG
 
@@ -71,7 +73,7 @@ Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyhandler -Chord 'Ctrl+d' -Function DeleteChar
 
 
-# Fuzzy finder
+# Fuzzy finder Fzf
 Import-Module PsFzf
 Set-PsFzfOption -PsReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
